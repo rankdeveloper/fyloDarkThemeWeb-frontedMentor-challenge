@@ -1,0 +1,142 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  
+.container{
+    margin:2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ;
+    
+}
+
+.container .container-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:100%;
+    width:90%;
+
+    
+}
+
+.container-inner ::before{
+    content: url(../images/bg-quotes.png);
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+ 
+    scroll-behavior: smooth;
+}
+
+  .grid-main{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:20px;
+    position:relative;
+    padding:1.5rem;
+    
+    
+  }
+
+
+  
+  
+  .grid{
+    
+    padding:1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: #202a3c;
+    border-radius:5px;
+   
+    
+  }
+  
+.grid p{
+    color:rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+    line-height: 24px;
+    font-size:14px;
+}
+
+  
+  .profile{
+   
+    margin-top:20px;
+    display:flex-start;
+    justify-content:center;
+  
+    align-items:center;
+    
+  }
+  
+  .profile-inner{
+    display:flex;
+    gap:0.8rem;
+    align-items:center;
+   
+    
+    
+  }
+  
+  .profile-inner .img{
+    width:30px;
+    height:30px;
+   
+    
+    
+  }
+  
+  .img img{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    
+  }
+  
+
+
+  
+  .profile-inner .name{
+    background-color:;
+    display:flex;
+ 
+    
+    justify-content:center;
+    align-items:center;
+  }
+  .name .name-inner{
+   background-color:;
+  }
+  
+  .name-inner h3{
+    font-size:13px;
+    color:white;
+    font-weight: 700;
+    line-height:24px;
+    
+    
+  }
+  
+  .name-inner p{
+    font-size:13px;
+    line-height:24px;
+    color:rgba(255, 255, 255, 0.85);
+  }
+  
+  @media screen and (max-width:400px){
+   .grid-main{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap:20px;
+  }
+}
